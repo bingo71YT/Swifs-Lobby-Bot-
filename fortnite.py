@@ -184,7 +184,7 @@ async def event_friend_message(message):
     joinedArguments = " ".join(split)
     print(' [PYBOT] [' + getTime() + '] {0.author.display_name}: {0.content}'.format(message))
 
-    if "!skin" in args[0].lower():
+    if "skin" in args[0].lower():
         if message.author.display_name in data['BlockList']:
             await message.reply("You don't have access to this command!")
         else:
@@ -196,7 +196,7 @@ async def event_friend_message(message):
                 await message.reply('Skin set to ' + id)
                 print(f" [PYBOT] [{getTime()}] Set Skin to: " + id)
         
-    if "!backpack" in args[0].lower():
+    if "backpack" in args[0].lower():
         if message.author.display_name in data['BlockList']:
             await message.reply("You don't have access to this command!")
         else:
@@ -213,7 +213,7 @@ async def event_friend_message(message):
                     await message.reply('Backpack set to ' + id)
                     print(f" [PYBOT] [{getTime()}] Set Backpack to: " + id)
 
-    if "!emote" in args[0].lower():
+    if "emote" in args[0].lower():
         if message.author.display_name in data['BlockList']:
             await message.reply("You don't have access to this command!")
         else:
